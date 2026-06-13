@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#050816;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#b8c0ff;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.sun{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:radial-gradient(circle, #ffd54f, #ff9800);
+    box-shadow:0 0 60px #ff9800;
+    animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.08);
+    }
+}
+
+.planets{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.08);
+}
+
+.card h2{
+    margin-bottom:10px;
+    color:#7dd3fc;
+}
+
+.card p{
+    color:#d1d5db;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
